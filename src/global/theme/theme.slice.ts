@@ -4,7 +4,7 @@ export interface ThemeState {
   mode: "light" | "dark";
 }
 
-const initialState: ThemeState = {
+export const initialState: ThemeState = {
   mode: "light",
 };
 
