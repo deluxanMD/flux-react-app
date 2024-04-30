@@ -52,5 +52,7 @@ describe("<FluxPasswordField />", () => {
     cy.findByTestId("VisibilityIcon").should("exist");
     cy.findByTestId("FluxPasswordField.InputAdornment").click({ force: true });
     cy.findByTestId("VisibilityOffIcon").should("exist");
+    cy.findByTestId("FluxPasswordField.InputAdornment").click({ force: true });
+    cy.findByTestId("VisibilityIcon").should("exist");
   });
 });
