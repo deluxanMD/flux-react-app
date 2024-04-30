@@ -8,7 +8,7 @@ type FluxPasswordFieldProps = {
   "data-testid"?: string;
 } & TextFieldProps;
 
-const FluxPasswordField = ({
+export const FluxPasswordField = ({
   name,
   helperText,
   "data-testid": dataTestId = "FluxPasswordField",
@@ -59,5 +59,3 @@ const FluxPasswordField = ({
     />
   );
 };
-
-export default FluxPasswordField;

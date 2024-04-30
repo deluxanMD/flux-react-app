@@ -7,7 +7,7 @@ type FluxTextFieldProps = {
   "data-testid"?: string;
 } & TextFieldProps;
 
-const FluxTextField = ({
+export const FluxTextField = ({
   name,
   helperText,
   "data-testid": dataTestId = "FluxTextField",
@@ -40,5 +40,3 @@ const FluxTextField = ({
     />
   );
 };
-
-export default FluxTextField;

@@ -1,5 +1,5 @@
 import { FormWrapper } from "test-utils/forms-test-utils";
-import FluxPasswordField from "./flux-password-field.component";
+import { FluxPasswordField } from "./flux-password-field.component";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { object, string } from "yup";
