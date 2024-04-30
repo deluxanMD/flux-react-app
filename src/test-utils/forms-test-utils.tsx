@@ -11,7 +11,7 @@ export const FormWrapper = ({ children, formMethods }: FormWrapperProps) => {
   return (
     <FluxForm
       formMethods={formMethods}
-      onSubmit={formMethods.handleSubmit(() => null)}
+      onSubmit={formMethods.handleSubmit(/* istanbul ignore next */ () => null)}
       data-testid="TestForm"
     >
       {children}
