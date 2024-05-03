@@ -1,7 +1,6 @@
 import { TextField, TextFieldProps } from "@mui/material";
 import React from "react";
 import { Controller, useFormContext } from "react-hook-form";
-import { HelperText } from "../fields.styles";
 
 type FluxTextFieldProps = {
   "data-testid"?: string;
@@ -28,9 +27,9 @@ export const FluxTextField = ({
             data-testid={dataTestId}
             helperText={
               (!!error || !!helperText) && (
-                <HelperText data-testid={`${dataTestId}.HelperText`}>
+                <span data-testid={`${dataTestId}.HelperText`}>
                   {!!error ? error.message : helperText}
-                </HelperText>
+                </span>
               )
             }
             {...field}

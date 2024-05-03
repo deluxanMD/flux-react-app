@@ -1,6 +1,7 @@
 import {
   FormControl,
   FormControlLabel,
+  FormHelperText,
   FormLabel,
   Radio,
   RadioGroup,
@@ -9,7 +10,6 @@ import {
 import React from "react";
 import { Controller, useFormContext } from "react-hook-form";
 import { Option } from "../flux-autocomplete-field/flux-autocomplete-field.component";
-import { RadioHelperText } from "./flux-radio-button-field.styles";
 
 type FluxRadioButtonFieldProps = {
   name: string;
@@ -47,9 +47,9 @@ export const FluxRadioButtonField = ({
             ))}
           </RadioGroup>
           {(!!error || !!helperText) && (
-            <RadioHelperText data-testid={`${dataTestId}.FormHelperText`}>
+            <FormHelperText data-testid={`${dataTestId}.FormHelperText`}>
               {error?.message ?? helperText}
-            </RadioHelperText>
+            </FormHelperText>
           )}
         </FormControl>
       )}

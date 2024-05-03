@@ -2,7 +2,6 @@ import { InputAdornment, TextField, TextFieldProps } from "@mui/material";
 import React, { useState } from "react";
 import { Controller, useFormContext } from "react-hook-form";
 import { Visibility, VisibilityOff } from "@mui/icons-material";
-import { HelperText } from "../fields.styles";
 
 type FluxPasswordFieldProps = {
   "data-testid"?: string;
@@ -47,9 +46,9 @@ export const FluxPasswordField = ({
             }}
             helperText={
               (!!error || !!helperText) && (
-                <HelperText data-testid={`${dataTestId}.HelperText`}>
+                <span data-testid={`${dataTestId}.HelperText`}>
                   {!!error ? error.message : helperText}
-                </HelperText>
+                </span>
               )
             }
             {...field}
