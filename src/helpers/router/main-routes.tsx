@@ -16,6 +16,10 @@ const MainRoutes = () => {
           path: "login",
           element: <LoginPage />,
         },
+        {
+          path: "signup",
+          element: <LoginPage />,
+        },
       ],
     },
   ]);
