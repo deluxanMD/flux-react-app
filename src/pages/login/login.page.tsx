@@ -3,6 +3,7 @@ import FluxForm from "components/forms/flux-form/flux-form.component";
 import LoginForm from "components/forms/login-form/login-form.component";
 import { useLoginForm } from "components/forms/login-form/login-form.hooks";
 import React from "react";
+import * as S from "./login.page.styles";
 
 const LoginPage = () => {
   const form = useLoginForm();
@@ -12,16 +13,18 @@ const LoginPage = () => {
   };
 
   return (
-    <FluxForm formMethods={form} data-testid="Login.Page">
-      <LoginForm />
-      <FluxButtons
-        type="submit"
-        variant="contained"
-        onClick={form.handleSubmit(handleLogin)}
-      >
-        Login
-      </FluxButtons>
-    </FluxForm>
+    <S.Container>
+      <FluxForm formMethods={form} data-testid="Login.Page">
+        <LoginForm />
+        <FluxButtons
+          type="submit"
+          variant="contained"
+          onClick={form.handleSubmit(handleLogin)}
+        >
+          Login
+        </FluxButtons>
+      </FluxForm>
+    </S.Container>
   );
 };
 
