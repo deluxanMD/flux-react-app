@@ -1,5 +1,5 @@
 import { DevTool } from "@hookform/devtools";
-import { Box, BoxProps } from "@mui/material";
+import { Box, BoxProps, Stack } from "@mui/material";
 import React from "react";
 import { FormProvider } from "react-hook-form";
 
@@ -22,7 +22,9 @@ const FluxForm = ({
     <FormProvider {...formMethods}>
       <Box component="form" data-testid={dataTestId} {...rest}>
         {devTool && <DevTool control={formMethods.control} />}
-        {children}
+        <Stack spacing={1} display="block">
+          {children}
+        </Stack>
       </Box>
     </FormProvider>
   );
