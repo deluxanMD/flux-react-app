@@ -10,6 +10,6 @@ export const OuterContainer = styled(Box)`
 `;
 
 export const FormContainer = styled(Card)`
-  max-width: 540px;
+  width: 600px;
   padding: 16px 16px 16px 16px;
 `;
