@@ -22,7 +22,7 @@ const FluxForm = ({
     <FormProvider {...formMethods}>
       <Box component="form" data-testid={dataTestId} {...rest}>
         {devTool && <DevTool control={formMethods.control} />}
-        <Stack spacing={1} display="block">
+        <Stack spacing={2} display="block">
           {children}
         </Stack>
       </Box>

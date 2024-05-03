@@ -1,5 +1,6 @@
 import UnAuthLayout from "helpers/layouts/unauth-layout/unauth-layout.component";
-import LoginPage from "pages/login/login.page";
+import LoginPage from "pages/auth/login/login.page";
+import SignupPage from "pages/auth/signup/signup.page";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const MainRoutes = () => {
@@ -18,7 +19,7 @@ const MainRoutes = () => {
         },
         {
           path: "signup",
-          element: <LoginPage />,
+          element: <SignupPage />,
         },
       ],
     },
