@@ -32,14 +32,17 @@ describe("<FluxPasswordField />", () => {
 
   it("render helper text", () => {
     cy.mount(<TestComponent helperText="Test Helper Text" />);
-    cy.findByTestId("FluxHelperText").should("have.text", "Test Helper Text");
+    cy.findByTestId("FluxPasswordField.HelperText").should(
+      "have.text",
+      "Test Helper Text"
+    );
   });
 
   it("render validation error", () => {
     cy.mount(<TestComponent />);
 
     cy.findByTestId("TestForm.Button").click();
-    cy.findByTestId("FluxHelperText").should(
+    cy.findByTestId("FluxPasswordField.HelperText").should(
       "have.text",
       "testField is a required field"
     );

@@ -9,7 +9,7 @@ export const FluxButtons = ({
   ...rest
 }: FluxButtonsProps) => {
   return (
-    <LoadingButton data-testid={dataTestId} {...rest}>
+    <LoadingButton data-testid={dataTestId} fullWidth {...rest}>
       {children}
     </LoadingButton>
   );
