@@ -1,5 +1,5 @@
 import { FormWrapper } from "test-utils/forms-test-utils";
-import FluxTextField from "./flux-text-field.component";
+import { FluxTextField } from "./flux-text-field.component";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { object, string } from "yup";
